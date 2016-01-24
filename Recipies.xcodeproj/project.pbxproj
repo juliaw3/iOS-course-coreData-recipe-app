@@ -13,6 +13,10 @@
 		5F26B7961C54831D00180850 /* Recipies.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5F26B7941C54831D00180850 /* Recipies.xcdatamodeld */; };
 		5F26B7981C54831D00180850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F26B7971C54831D00180850 /* Assets.xcassets */; };
 		5F26B79B1C54831D00180850 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F26B7991C54831D00180850 /* LaunchScreen.storyboard */; };
+		5F26B7A71C548DD400180850 /* Recipe+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F26B7A51C548DD400180850 /* Recipe+CoreDataProperties.swift */; };
+		5F26B7A81C548DD400180850 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F26B7A61C548DD400180850 /* Recipe.swift */; };
+		5F26B7AA1C548FD200180850 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F26B7A91C548FD200180850 /* RecipeCell.swift */; };
+		5F26B7AC1C551B5500180850 /* CreateRecipeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F26B7AB1C551B5500180850 /* CreateRecipeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		5F26B7971C54831D00180850 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F26B79A1C54831D00180850 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F26B79C1C54831D00180850 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F26B7A51C548DD400180850 /* Recipe+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Recipe+CoreDataProperties.swift"; path = "../Recipe+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5F26B7A61C548DD400180850 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Recipe.swift; path = ../Recipe.swift; sourceTree = "<group>"; };
+		5F26B7A91C548FD200180850 /* RecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		5F26B7AB1C551B5500180850 /* CreateRecipeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateRecipeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +64,10 @@
 		5F26B78C1C54831C00180850 /* Recipies */ = {
 			isa = PBXGroup;
 			children = (
+				5F26B7A41C548D7000180850 /* Controller */,
+				5F26B7A31C548D5E00180850 /* View */,
+				5F26B7A21C548D4C00180850 /* Model */,
 				5F26B78D1C54831C00180850 /* AppDelegate.swift */,
-				5F26B78F1C54831D00180850 /* ViewController.swift */,
 				5F26B7911C54831D00180850 /* Main.storyboard */,
 				5F26B7971C54831D00180850 /* Assets.xcassets */,
 				5F26B7991C54831D00180850 /* LaunchScreen.storyboard */,
@@ -65,6 +75,32 @@
 				5F26B7941C54831D00180850 /* Recipies.xcdatamodeld */,
 			);
 			path = Recipies;
+			sourceTree = "<group>";
+		};
+		5F26B7A21C548D4C00180850 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5F26B7A51C548DD400180850 /* Recipe+CoreDataProperties.swift */,
+				5F26B7A61C548DD400180850 /* Recipe.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5F26B7A31C548D5E00180850 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5F26B7A91C548FD200180850 /* RecipeCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5F26B7A41C548D7000180850 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5F26B78F1C54831D00180850 /* ViewController.swift */,
+				5F26B7AB1C551B5500180850 /* CreateRecipeVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +175,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F26B7901C54831D00180850 /* ViewController.swift in Sources */,
+				5F26B7A71C548DD400180850 /* Recipe+CoreDataProperties.swift in Sources */,
 				5F26B7961C54831D00180850 /* Recipies.xcdatamodeld in Sources */,
+				5F26B7AA1C548FD200180850 /* RecipeCell.swift in Sources */,
+				5F26B7AC1C551B5500180850 /* CreateRecipeVC.swift in Sources */,
 				5F26B78E1C54831C00180850 /* AppDelegate.swift in Sources */,
+				5F26B7A81C548DD400180850 /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
